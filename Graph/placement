@@ -1,0 +1,6 @@
+Red and blue coloured nodes randomly find all  nodes that start with a red node and end with a red node and have atleast a blue node in the middle
+
+ans)Bunch together the red nodes .Each element in each bunch will be connected to other bunches.Making a bunch is starting from a red node and traversing and finding all red nodes one after the other.
+
+
+Lowest common ancestor,diameter,Centroid of a tree??? 
