@@ -1,0 +1,61 @@
+Java tutorial:
+
+1)JVM:JVM calls the main method
+2)Compiler comiles and makes the class file .class file contains byte code
+3)JVM loads the class file and creates an object out of it and stores it in heap memory, for every class file only one object is created
+4)After loading it does linking... if run time error is there it comes here after that it allocates memory to run time variables and assigns default values
+5)Heap Area: Information of all objects is stored in heap area...one heap per jvm
+6)Stack area: for every thread one run time stack.. after a thread terminates its stack is destroyed
+Stack memory has method calls and local variables
+heap area has instance variables
+
+7)JVM does not create object of the class which has main method
+8)Static block is run before main method.. main also static block
+9)class name and file name should be same only if class is public
+
+
+
+10)Parameters are passed by value in java
+11)over loading is related to  compile time polymorphism. Over loading methods can have same name but are differentiated based on the number of parameters or type of parameters
+12)We can overload main method.Two static methods can be overloaded.
+13)constructors are not inherited
+
+
+
+
+
+
+Inheritence:
+We can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it (as in example above, toString() method is overridden).
+
+Method overriding:
+Method overriding is one of the way by which java achieve Run Time Polymorphism.The version of a method that is executed will be determined by the object that is used to invoke it.
+the method that will be executed depends the type of class the variable is referring to.(new parent new child) depending on that.
+
+if the method is static in parent then child method will be hidden.
+
+private methods cannot be overriden
+
+if super class is throwing an exception overriden method can throw no error or subclass of the exception not super class
+
+super() used to call parent constructor
+
+super() is the first thing called in child constructor.if in the constructor .getClassName method is there it will print the name of child class
+
+classes that are final cant have subclass
+
+abstract class cannot be instantiated
+
+abstract class does not need to have abstract method
+
+binding of private happens at compile time so run time polymorphism cannot happen as a result run time calls cant be resolved
+
+
+for instance variable suppose value variable is present in both parent and child ( parent obj=new child()   and refer to value. it will be parent value)
+
+
+
+Can a top level class be private or protected????Study access specifiers
+
+Main objective of Garbage Collector is to free heap memory by destroying unreachable objects.
+Run time pe memory allocated is heap memory
